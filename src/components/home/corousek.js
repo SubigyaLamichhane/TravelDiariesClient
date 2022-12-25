@@ -5,7 +5,7 @@ function CarouselComp() {
     <Carousel className="carousel">
       <Carousel.Item>
         <img
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'contain' }}
           className="d-block carousel"
           src="https://source.unsplash.com/random"
           alt="First slide"
@@ -13,18 +13,18 @@ function CarouselComp() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'contain' }}
           className="d-block carousel"
-          src="https://picsum.photos/200/300"
-          alt="First slide"
+          src="https://source.unsplash.com/random"
+          alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'contain' }}
           className="d-block carousel"
-          src="https://picsum.photos/200/"
-          alt="First slide"
+          src="https://source.unsplash.com/random"
+          alt="Third slide"
         />
       </Carousel.Item>
     </Carousel>
