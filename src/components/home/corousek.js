@@ -7,7 +7,7 @@ function CarouselComp() {
         <img
           style={{ objectFit: 'contain' }}
           className="d-block carousel"
-          src="https://source.unsplash.com/random"
+          src="https://source.unsplash.com/random/900×700/"
           alt="First slide"
         />
       </Carousel.Item>
@@ -15,7 +15,7 @@ function CarouselComp() {
         <img
           style={{ objectFit: 'contain' }}
           className="d-block carousel"
-          src="https://source.unsplash.com/random"
+          src="https://source.unsplash.com/random/900×700/?travel"
           alt="Second slide"
         />
       </Carousel.Item>
@@ -23,7 +23,7 @@ function CarouselComp() {
         <img
           style={{ objectFit: 'contain' }}
           className="d-block carousel"
-          src="https://source.unsplash.com/random"
+          src="https://source.unsplash.com/random/900×700/?nepal"
           alt="Third slide"
         />
       </Carousel.Item>
