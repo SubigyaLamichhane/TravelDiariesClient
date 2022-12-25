@@ -15,7 +15,7 @@ const App = () => {
   const loggedin = useSelector((state) => state.loggedin);
   // const post_id = useSelector(state=>state.post_id)
 
-  const postID = localStorage.getItem('postID');
+  // const postID = localStorage.getItem('postID');
 
   return (
     <>
@@ -28,12 +28,12 @@ const App = () => {
             <Route path="/diaries" element={<Diaries />} />
 
             <Route path="/auth" element={<Auth />} />
-            <Route path={`post/${postID}`} element={<Post />} />
+            <Route path={`post/:post_id`} element={<Post />} />
             {loggedin ? (
               <>
                 <Route path="/addpost" element={<AddPost />} />
                 <Route path="/profile" element={<Profile />} />
-                <Route path={`posts/${postID}/edit`} element={<Edit />} />
+                <Route path={`posts/edit/:post_id`} element={<Edit />} />
               </>
             ) : null}
           </Routes>

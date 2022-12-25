@@ -1,7 +1,7 @@
 import axios from 'axios';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
-export const API_URL = 'https://traveldiariesserver.onrender.com';
+export const API_URL = 'https://traveldiariesserver.onrender.com/';
 
 export const gettAllPosts = async () => {
   const data = await axios.get(API_URL + '/posts');
@@ -44,8 +44,8 @@ export const deletePostByID = async (id) => {
   return data;
 };
 
-export const getPostById = (post_id, user_id) => {
-  const post = axios.get(`${API_URL}/posts/${post_id}`, {
+export const getPostById = async (post_id, user_id) => {
+  const post = await axios.get(`${API_URL}/posts/${post_id}`, {
     user: user_id,
   });
   return post;
